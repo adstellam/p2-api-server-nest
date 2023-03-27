@@ -1,0 +1,144 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.WorkStatusEnum = exports.WorkItemPriorityEnum = exports.SeedTypeEnum = exports.ReferenceLayerTypeEnum = exports.ReferenceLayerSourceFormatEnum = exports.OperationTypeEnum = exports.LoggingMethodEnum = exports.LoggingLevelEnum = exports.JobPriorityEnum = exports.HttpMethodEnum = exports.DeviceElementTypeEnum = exports.ApiResourceEnum = void 0;
+var ApiResourceEnum;
+(function (ApiResourceEnum) {
+    ApiResourceEnum["Job"] = "Job";
+    ApiResourceEnum["JobDTO"] = "JobDTO";
+    ApiResourceEnum["Task"] = "Task";
+    ApiResourceEnum["TaskDTO"] = "TaskDTO";
+    ApiResourceEnum["TaskOperationsData"] = "TasKOperationsData";
+    ApiResourceEnum["TaskOperationsDataDTO"] = "TaskOperationsDataDTO";
+    ApiResourceEnum["Field"] = "Field";
+    ApiResourceEnum["FieldDTO"] = "FieldDTO";
+    ApiResourceEnum["FieldBoundary"] = "FieldBoundary";
+    ApiResourceEnum["FieldBoundaryDTO"] = "FieldBoundaryDTO";
+    ApiResourceEnum["CropZone"] = "CropZone";
+    ApiResourceEnum["CropZoneDTO"] = "CropZoneDTO";
+    ApiResourceEnum["CropObservationsData"] = "CropObservationsData";
+    ApiResourceEnum["CropObservationsDataDTO"] = "CropObservationsDataDTO";
+    ApiResourceEnum["CropImage"] = "CropImage";
+    ApiResourceEnum["CropImageDTO"] = "CropImageDTO";
+    ApiResourceEnum["Machine"] = "Machine";
+    ApiResourceEnum["MachineDTO"] = "MachineDTO";
+    ApiResourceEnum["MachineTelmaticsData"] = "MachineTelematicsData";
+    ApiResourceEnum["MachineTelematicsDataDTO"] = "MachineTelematicsDataDTO";
+    ApiResourceEnum["MapLayer"] = "MapLayer";
+    ApiResourceEnum["MapyLaerDTO"] = "MapLayerDTO";
+    ApiResourceEnum["User"] = "User";
+    ApiResourceEnum["UserDTO"] = "UserDTO";
+    ApiResourceEnum["Role"] = "Role";
+    ApiResourceEnum["RoleDTO"] = "RoleDTO";
+})(ApiResourceEnum = exports.ApiResourceEnum || (exports.ApiResourceEnum = {}));
+;
+var DeviceElementTypeEnum;
+(function (DeviceElementTypeEnum) {
+    DeviceElementTypeEnum["Machine"] = "Machine";
+    DeviceElementTypeEnum["Implement"] = "Implement";
+    DeviceElementTypeEnum["Sensor"] = "Sensor";
+    DeviceElementTypeEnum["Bin"] = "Bin";
+    DeviceElementTypeEnum["Section"] = "Section";
+    DeviceElementTypeEnum["Unit"] = "Unit";
+    DeviceElementTypeEnum["Function"] = "Function";
+    DeviceElementTypeEnum["IrrSystem"] = "IrrSystem";
+    DeviceElementTypeEnum["IrrSection"] = "IrrSection";
+    DeviceElementTypeEnum["Endgun"] = "Endgun";
+})(DeviceElementTypeEnum = exports.DeviceElementTypeEnum || (exports.DeviceElementTypeEnum = {}));
+;
+var HttpMethodEnum;
+(function (HttpMethodEnum) {
+    HttpMethodEnum["GET"] = "GET";
+    HttpMethodEnum["POST"] = "POST";
+    HttpMethodEnum["PUT"] = "PUT";
+    HttpMethodEnum["PATCH"] = "PATCH";
+    HttpMethodEnum["DELETE"] = "DELETE";
+})(HttpMethodEnum = exports.HttpMethodEnum || (exports.HttpMethodEnum = {}));
+;
+var JobPriorityEnum;
+(function (JobPriorityEnum) {
+    JobPriorityEnum["Immediately"] = "Immediately";
+    JobPriorityEnum["AsSoonAsPossible"] = "AsSoonAsPossible";
+    JobPriorityEnum["High"] = "High";
+    JobPriorityEnum["Meidum"] = "Medium";
+    JobPriorityEnum["Low"] = "Low";
+})(JobPriorityEnum = exports.JobPriorityEnum || (exports.JobPriorityEnum = {}));
+;
+var LoggingLevelEnum;
+(function (LoggingLevelEnum) {
+    LoggingLevelEnum["MachineType"] = "MachineType";
+    LoggingLevelEnum["SpecificMachine"] = "SpecificMachine";
+    LoggingLevelEnum["ImplementType"] = "ImplementType";
+    LoggingLevelEnum["SpcificImplement"] = "SpecificImplement";
+    LoggingLevelEnum["SpecificSection"] = "SpecificSection";
+    LoggingLevelEnum["SpecificMeter"] = "SpecificMeter";
+    LoggingLevelEnum["Unspecified"] = "Unspecified";
+})(LoggingLevelEnum = exports.LoggingLevelEnum || (exports.LoggingLevelEnum = {}));
+;
+var LoggingMethodEnum;
+(function (LoggingMethodEnum) {
+    LoggingMethodEnum["TimeInterval"] = "TimeInterval";
+    LoggingMethodEnum["DistanceInterval"] = "DistanceInterval";
+    LoggingMethodEnum["ThresholdLimits"] = "ThresholdLimits";
+    LoggingMethodEnum["OnChange"] = "OnChange";
+    LoggingMethodEnum["Total"] = "Total";
+})(LoggingMethodEnum = exports.LoggingMethodEnum || (exports.LoggingMethodEnum = {}));
+;
+var OperationTypeEnum;
+(function (OperationTypeEnum) {
+    OperationTypeEnum["SowingAndPlanting"] = "Planting";
+    OperationTypeEnum["Tillage"] = "Cultivating";
+    OperationTypeEnum["Irrigation"] = "Irrigation";
+    OperationTypeEnum["Fertilizaing"] = "Fertilizing";
+    OperationTypeEnum["CropProtection"] = "Spraying";
+    OperationTypeEnum["Harvesting"] = "Harvesting";
+    OperationTypeEnum["Wrapping"] = "Wrapping";
+    OperationTypeEnum["Transport"] = "Transport";
+    OperationTypeEnum["Bailing"] = "Bailing";
+    OperationTypeEnum["Swathing"] = "Swathing";
+    OperationTypeEnum["ForageHarvesting"] = "ForageHarvesting";
+    OperationTypeEnum["Mowing"] = "Mowing";
+    OperationTypeEnum["Unknown"] = "Unknown";
+})(OperationTypeEnum = exports.OperationTypeEnum || (exports.OperationTypeEnum = {}));
+;
+var ReferenceLayerSourceFormatEnum;
+(function (ReferenceLayerSourceFormatEnum) {
+    ReferenceLayerSourceFormatEnum["Vector"] = "Vector";
+    ReferenceLayerSourceFormatEnum["Raster"] = "Raster";
+})(ReferenceLayerSourceFormatEnum = exports.ReferenceLayerSourceFormatEnum || (exports.ReferenceLayerSourceFormatEnum = {}));
+;
+var ReferenceLayerTypeEnum;
+(function (ReferenceLayerTypeEnum) {
+    ReferenceLayerTypeEnum["BackgroundImage"] = "BackgroundImage";
+    ReferenceLayerTypeEnum["CommonLandUnit"] = "CommonLandUnit";
+    ReferenceLayerTypeEnum["ElevationMap"] = "ElevationMap";
+    ReferenceLayerTypeEnum["ManagementZone"] = "ManagementZone";
+    ReferenceLayerTypeEnum["Obstacles"] = "Obstacles";
+    ReferenceLayerTypeEnum["ProfitMap"] = "ProfitMap";
+    ReferenceLayerTypeEnum["SoilTypeMap"] = "SoilTypeMap";
+    ReferenceLayerTypeEnum["VarietyLocation"] = "VarietyLocator";
+})(ReferenceLayerTypeEnum = exports.ReferenceLayerTypeEnum || (exports.ReferenceLayerTypeEnum = {}));
+;
+var SeedTypeEnum;
+(function (SeedTypeEnum) {
+})(SeedTypeEnum = exports.SeedTypeEnum || (exports.SeedTypeEnum = {}));
+;
+var WorkItemPriorityEnum;
+(function (WorkItemPriorityEnum) {
+    WorkItemPriorityEnum["Immediately"] = "Immediately";
+    WorkItemPriorityEnum["AsSoonAsPossible"] = "AsSoonAsPossible";
+    WorkItemPriorityEnum["High"] = "High";
+    WorkItemPriorityEnum["Medium"] = "Medium";
+    WorkItemPriorityEnum["Low"] = "Low";
+})(WorkItemPriorityEnum = exports.WorkItemPriorityEnum || (exports.WorkItemPriorityEnum = {}));
+;
+var WorkStatusEnum;
+(function (WorkStatusEnum) {
+    WorkStatusEnum["Scheduled"] = "Scheduled";
+    WorkStatusEnum["InProgress"] = "InProgress";
+    WorkStatusEnum["Paused"] = "Paused";
+    WorkStatusEnum["PartiallyCompleted"] = "PartiallyCompleted";
+    WorkStatusEnum["Completed"] = "Completed";
+    WorkStatusEnum["Cancelled"] = "Cancelled";
+})(WorkStatusEnum = exports.WorkStatusEnum || (exports.WorkStatusEnum = {}));
+;
+//# sourceMappingURL=enums.js.map
